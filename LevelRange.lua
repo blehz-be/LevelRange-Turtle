@@ -340,6 +340,8 @@ local function lUpdateTooltip(zoneName)
     LevelRangeTooltip:SetBackdropBorderColor(1, 1, 1, 1);
     LevelRangeTooltip:ClearAllPoints();
     LevelRangeTooltip:SetPoint("BOTTOMLEFT", "WorldMapDetailFrame", "BOTTOMLEFT", 0, 0);
+    LevelRangeTooltip:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background"});
+    LevelRangeTooltip:SetBackdropColor(0, 0, 0, 1);
 
     -- Only show if there is level information
     if levels then
